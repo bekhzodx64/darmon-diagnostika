@@ -1,0 +1,86 @@
+.price
+  &-intro
+    background: url(../../img/intro/price-bg.webp) no-repeat
+    background-size: cover
+    background-position: center center
+  &-container
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    width: 100%
+    margin: 0 auto
+    height: 411px
+    color: #FFF
+    max-width: 1210px
+    padding: 0 20px
+  &-title
+    font-weight: 700
+    margin-bottom: 10px
+    @include adaptiv-font(31, 20)
+  &-btn
+    a
+      display: inline-block
+      color: #FFF
+      font-weight: 700
+      padding: 15px 70px
+      border: 1px solid #FFF
+
+.table
+  padding: 50px 0
+  &-item
+    padding-bottom: 10px
+  &-title
+    display: flex
+    justify-content: space-between
+    padding: 20px 40px
+    font-weight: 700
+    color: #15A2DE
+    font-size: 20px
+    border-top: 1px solid #15A2DE
+    border-left: 1px solid #15A2DE
+    border-right: 1px solid #15A2DE
+    cursor: pointer
+    user-select: none
+    transition: all .3s ease-in-out
+    @include adaptiv-font(20, 12)
+  &-desc
+    border-top: 1px solid #15A2DE
+    border-left: 1px solid #15A2DE
+    border-right: 1px solid #15A2DE
+    max-height: 0px
+    overflow: hidden
+    transition: max-height .3s ease-in-out
+    &-item
+      display: flex
+      justify-content: space-between
+      transition: background .3s ease-in-out
+      &:hover
+        background-color: lighten(#15A2DE, 43%)
+      &:last-child
+        .table-desc-title,
+        .table-desc-price
+          border-bottom: none
+    &-title
+      font-weight: 500
+      border-bottom: 1px solid #15A2DE
+      border-right: 1px solid #15A2DE
+      padding: 20px 40px
+      width: 85%
+      @include adaptiv-font(16, 12)
+    &-price
+      display: flex
+      text-align: right
+      font-weight: 500
+      align-items: center
+      justify-content: center
+      color: #15A2DE
+      padding: 0px 5px
+      border-bottom: 1px solid #15A2DE
+      width: 15%
+      @include adaptiv-font(16, 12)
+  &-icon
+    display: block
+    transition: transform .3s ease-in-out
+    &-rotate
+      transform: rotate(180deg)
+      fill: #FFF

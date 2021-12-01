@@ -1,0 +1,47 @@
+.about
+  padding: 60px 0 90px
+  &-intro
+    background: url(../../img/intro/about-bg.webp) no-repeat
+    background-size: cover
+    background-position: center center
+  &-container
+    display: flex
+    flex-direction: column
+    justify-content: space-evenly
+    width: 100%
+    margin: 0 auto
+    height: 411px
+    color: #FFF
+    max-width: 1210px
+    padding: 0 20px
+  &-title
+    font-weight: 700
+    margin-bottom: 10px
+    @include adaptiv-font(31, 20)
+  &-btn
+    a
+      display: inline-block
+      color: #FFF
+      font-weight: 700
+      padding: 15px 70px
+      border: 1px solid #FFF
+
+  &-p
+    margin-bottom: 25px
+    &:last-child
+      margin-bottom: 0
+    &-title
+      font-weight: 700
+      font-size: 26px
+      color: #15A2DE
+      margin-bottom: 25px
+      @include adaptiv-font(26, 18)
+    &-desc
+      color: #3C3C3C
+      p
+        padding-bottom: 20px
+        line-height: 1.8
+    &-img
+      display: block
+      width: 100%
+      height: auto
